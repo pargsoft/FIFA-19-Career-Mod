@@ -1,0 +1,278 @@
+{
+	"ID": "clubUserSeller",
+	"offer": {
+				"attrs": [ -1, -1, -1 ],
+				"npts": [ "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+	},
+	"request": null,
+	"last-buyer-action": null,
+	"last-seller-action": null,
+	"children": [
+		{
+			"ID": "clubUserSeller-root: this is how a CUS nego starts.",
+			"offer": {
+				"attrs": [ 14600000, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [-1, -1, -1],
+				"npts": [ "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": null,
+			"last-seller-action": null,
+			"children": [
+				{
+					"ID": "User-Increases-AI-Accepts",
+					"offer": {
+						"attrs": [ -1, -1, -1 ],
+						"npts": [ "OPS_NONE", "OPS_NONE", "OPS_NONE" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [14610000, -1, -1],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_ACCEPT",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "User-Increases-AI-Rejects",
+					"offer": {
+						"attrs": [ -1, -1, -1 ],
+						"npts": [ "OPS_NONE", "OPS_NONE", "OPS_NONE" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 44000000, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_REJECT",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "User-Increases-AI-Counters-Stick",
+					"offer": {
+						"attrs": [ 14600000, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 81
+					},
+					"request": {
+						"attrs": [ 24600000, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "User-Increase-AI-Counters-Lenient-Low",
+					"offer": {
+						"attrs": [ 18300000, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 82
+					},
+					"request": {
+						"attrs": [ 19600000, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "User-Requests-HigherSum-AIOffers-SellOn",
+					"offer": {
+						"attrs": [ 15100000, -1, 5 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 81
+					},
+					"request": {
+						"attrs": [ 20600000, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": [
+						{
+							"ID": "User-Counters-Increased-AddOn-AI-Accepts",
+							"offer": {
+								"attrs": [ 15100000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 15100000, -1, 7 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_ACCEPT",
+							"last-seller-action": "UACT_REQUEST",
+							"children": null
+						},
+						{
+							"ID": "User-Removes-AddOn-AI-Accepts",
+							"offer": {
+								"attrs": [ 15100000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 15100000, -1, -1 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_ACCEPT",
+							"last-seller-action": "UACT_REQUEST",
+							"children": null
+						},
+						{
+							"ID": "User-Decreases-AddOn-IncreasesSum-AI-Sticks",
+							"offer": {
+								"attrs": [ 15100000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 17100000, -1, 3 ],
+								"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_OFFER",
+							"last-seller-action": "UACT_REQUEST",
+							"children": null
+						}
+					]
+				},
+				{
+					"ID": "User-Adds-SellOn-AI-Removes-it",
+					"offer": {
+						"attrs": [ 14600000, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 81
+					},
+					"request": {
+						"attrs": [ 14600000, -1, 10 ],
+						"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "User-Adds-SellOn-AI-IncreasesSum-Decreases-SellOn",
+					"offer": {
+						"attrs": [ 14900000, -1, 5 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 91
+					},
+					"request": {
+						"attrs": [ 14600000, -1, 15 ],
+						"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": [
+						{
+							"ID": "User-Adds-SellOn-AI-IncreasesSum-Decreases-SellOn-UserAccepts",
+							"offer": {
+								"attrs": [ 14900000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 14600000, -1, 15 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_OFFER",
+							"last-seller-action": "UACT_ACCEPT",
+							"children": null
+						},
+						{
+							"ID": "User-Adds-SellOn-AI-IncreasesSum-Decreases-SellOn-UserStalls",
+							"offer": {
+								"attrs": [ 14900000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 14600000, -1, 15 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_OFFER",
+							"last-seller-action": "UACT_STALL",
+							"children": null
+						},
+						{
+							"ID": "User-Adds-SellOn-AI-IncreasesSum-Decreases-SellOn-UserRejects",
+							"offer": {
+								"attrs": [ 14900000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 81
+							},
+							"request": {
+								"attrs": [ 14600000, -1, 15 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_OFFER",
+							"last-seller-action": "UACT_REJECT",
+							"children": null
+						}
+					]
+				},
+				{
+					"ID": "User-Adds-SellOn-AI-Increases-AddOn-Decreases-Sum",
+					"offer": {
+						"attrs": [ 19200000, -1, 5 ],
+						"npts": ["OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 82
+					},
+					"request": {
+						"attrs": [ 23000000, -1, 4 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": [
+						{
+							"ID": "UserCounters-AddOn-and-Sum-AI-accepts",
+							"offer": {
+								"attrs": [ 19200000, -1, 5 ],
+								"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 82
+							},
+							"request": {
+								"attrs": [ 19200000, -1, 2 ],
+								"npts": [ "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_ACCEPT",
+							"last-seller-action": "UACT_REQUEST",
+							"children": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"test_runs": [
+		{
+			"test_run_name":"Main test run"
+		}
+	]
+}

@@ -1,0 +1,507 @@
+{
+	"ID": "root-to-be-ignored",
+	"offer": null,
+	"request": null,
+	"last-buyer-action": null,
+	"last-seller-action": null,
+	"children": [
+		{
+			"ID": "clubUserBuyer",
+			"offer": {
+						"attrs": [ -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+			},
+			"request": {
+						"attrs": [ -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+			},
+			"last-buyer-action": null,
+			"last-seller-action": null,
+			"children": [
+				{
+					"ID": "buyer-offers-seller-accepts",
+					"offer": {
+						"attrs": [ -1, -1, -1, 99000, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": null,
+						"npts": null,
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_ACCEPT",
+					"children": null
+				},
+				{
+					"ID": "buyer-offers-seller-rejects",
+					"offer": {
+						"attrs": [ -1, -1, -1, 5, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": null,
+						"npts": null,
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REJECT",
+					"children": null
+				},	
+				{
+					"ID": "buyer-offers-seller-counters-lenient-high",
+					"offer": {
+						"attrs": [ -1, -1, -1, 12000000, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, -1, -1, 18200000, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 128
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": [
+						{	
+							"ID": "buyer-offers-seller-counters-lenient-high-buyer-accepts",
+							"offer": {
+								"attrs": [ -1, -1, -1, 10000000, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 0
+								},
+							"request": {
+								"attrs": [ -1, -1, -1, 18200000, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+								"flags": 144
+								},
+								"last-buyer-action": "UACT_ACCEPT",
+								"last-seller-action": "AACT_REQUEST",
+								"children": null
+						},
+						{
+							"ID": "buyer-offers-seller-counters-lenient-high-buyer-rejects",
+							"offer": {
+								"attrs": [ -1, -1, -1, 10000000, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 0
+								},
+							"request": {
+								"attrs": [ -1, -1, -1, 18200000, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+								"flags": 144
+								},
+							"last-buyer-action": "UACT_REJECT",
+							"last-seller-action": "AACT_REQUEST",
+							"children": null
+						},
+						{
+							"ID": "BOffers-SCountersLH-BCounters-SCounters-BCounters-SStalls",
+							"offer": {
+									"attrs": [ -1, -1, -1, 14200000, -1, -1 ],
+									"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+									"flags": 0
+							},
+							"request": { 
+									"attrs": [-1, -1, -1, 18200000, -1, -1 ],
+									"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+									"flags": 145
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_STALL",
+							"children": null
+						},
+						{
+							"ID": "BOffers-SCountersLH-BSticks",
+							"offer": {
+									"attrs": [ -1, -1, -1, 12000000, -1, -1 ],
+									"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+									"flags": 0
+							},
+							"request": { 
+									"attrs": [-1, -1, -1, 18200000, -1, -1 ],
+									"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+									"flags": 144
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_ACCEPT",
+							"children": null
+						}
+					]
+				},
+				{
+					"ID": "buyer-offers-seller-counters-lenient-low",
+					"offer": {
+						"attrs": [ -1, -1, -1, 12000000, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, -1, -1, 18200000, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 64
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "Boffers-ScountersAsksFF",
+					"offer": {
+						"attrs": [ -1, -1, -1, 12000000, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, -1, -1, 17500000, -1, 5 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 144
+					},		
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": [
+						{
+							"ID": "Boffers-ScountersAsksFF-BCoutnersDecrFF-SCounterIncrFF",
+							"offer": {
+								"attrs": [ -1, -1, -1, 15000000, -1, 4 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ -1, -1, -1, 16800000, -1, 5 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 164
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_REQUEST",
+							"children": null
+						}
+					]
+				},		
+				{
+					"ID": "BoffersAddFFee-SCountersLHDeclineFF",
+					"offer": {
+						"attrs": [ -1, -1, -1, 10000000, -1, 5 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, -1, -1, 18200000, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 144
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REJECT",
+					"children": null
+				},
+				{
+					"ID": "BoffersAddFFee-SCountersDecreaseFF",
+					"offer": {
+						"attrs": [ -1, -1, -1, 15000000, -1, 15 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, -1, -1, 17500000, -1, 5 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+						"flags": 80
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": [
+						{
+							"ID": "BoffersAddFFee-SCountersDecrFF-BCounteRLLowIncrFF",
+							"offer": {
+								"attrs": [ -1, -1, -1, 15500000, -1, 10 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ -1, -1, -1, 17500000, -1, 5 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+								"flags": 81
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_REQUEST",
+							"children": [
+								{
+									"ID": "BoffersAddFFee-SDecrFF-BIncrFF-SSticks-BDecrFF",
+									"offer": {
+										"attrs": [ -1, -1, -1, 16500000, -1, 3 ],
+										"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ -1, -1, -1, 17500000, -1, 5 ],
+										"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+										"flags": 81
+									},
+									"last-buyer-action": "UACT_MAKE_OFFER",
+									"last-seller-action": "AACT_REQUEST",
+									"children": [
+										{
+											"ID": "BoffersAddFFee-SDecrFF-BIncrFF-SSticks-BDecrFF-Ssticks-BDeclFF",
+											"offer": {
+												"attrs": [ -1, -1, -1, 17500000, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ -1, -1, -1, 17500000, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_REJECTED" ],
+												"flags": 81
+											},
+											"last-buyer-action": "UACT_MAKE_OFFER",
+											"last-seller-action": "AACT_ACCEPT",
+											"children": null
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "UserOffers-PlayerSwap-AI-Counters-Area",
+			"offer": {
+				"attrs": [ 201153, 7, -1, -1, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ -1, 0, -1, -1, -1, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_MAKE_OFFER",
+			"last-seller-action": "AACT_REQUEST",
+			"children": [
+				{
+					"ID": "UserOffers-Player-Swap-AI-Counters-Area-UserOffers-AreaPlayer-AI-Accepts-BUYER-SUBTITLE-ONLY",
+					"offer": {
+						"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_AGREE",
+					"children": [
+						{
+							"ID": "UserOffers-PlayerSwap-AI-Counters-Area-UserOffers-AreaPlayer-AI-Accepts-SELLER-SUBTITLE-ONLY",
+							"offer": {
+								"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED", "OPS_ASKED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "UACT_ASK",
+							"last-seller-action": "AACT_ACCEPT",
+							"children": null
+						}
+					]
+				},
+				{
+					"ID": "UserOffers-PlayerSwap-AI-Counters-Area-User-Offers-TransferSum",
+					"offer": {
+						"attrs": [ -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+						},
+					"request": {
+						"attrs": [ -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": null,
+					"last-seller-action": null,
+					"children": [
+						{
+							"ID": "User-Offers-PlayerSwap_AI-Counters-Area-User-Offers-TransferSum-AI-Rejects",
+							"offer": {
+								"attrs": [ -1, -1, -1, 3500000, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_REJECT",
+							"children": null
+						}
+					]
+				}
+			]	
+		},
+		{
+			"ID": "UserOffers-PlayerSwap-AI-CountersArea-Special-Case",
+			"offer": {
+				"attrs": [ 221576, 1, -1, -1, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ -1, 2, -1, -1, -1, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_MAKE_OFFER",
+			"last-seller-action": "AACT_REQUEST",
+			"children": [
+				{
+					"ID": "UserOffers-PlayerSwap-AI-Counters-Area-UserOffersAreaPlayer-AI-Requests-OtherPlayer-SameArea",
+					"offer": {
+						"attrs": [ 237029, 2, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ -1, 2, -1, -1, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				}
+			]
+		},
+		{
+			"ID": "UserOffers-PlayerSwap-AI-Counters-Area-User-Rejects",
+			"offer": {
+				"attrs": [ 201153, 7, -1, -1, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ -1, 0, -1, -1, -1, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_REJECT",
+			"last-seller-action": "AACT_REQUEST",
+			"children": null
+		},
+		{
+			"ID": "UserOffers-PlayerSwap_AI-Agrees-BUYER-SUBTITLE-ONLY",
+			"offer": {
+				"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+				"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_MAKE_OFFER",
+			"last-seller-action": "AACT_AGREE",
+			"children": [
+				{
+					"ID": "UserOffers-PlayerSwap-AI-Accepts-SELLER-SUBTITLE-ONLY",
+					"offer": {
+						"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED", "OPS_ASKED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 192119, 0, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_ASK",
+					"last-seller-action": "AACT_ACCEPT",
+					"children": null
+				}
+			]
+		},
+		{
+			"ID": "UserOffers-PlayerSwap-AI-Counters-Requests-AdditionalCash-BUYER-SUBTITLE-ONLY",
+			"offer": {
+				"attrs": [ 139062, 0, -1, -1, -1, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_OFFERED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 139062, 0, -1, -1, -1, -1 ],
+				"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_MAKE_OFFER",
+			"last-seller-action": "AACT_AGREE",
+			"children": [
+				{
+					"ID": "UserOffers-PlayerSwap-AI-Counters-Requests-AdditionalCash-SELLER-SUBTITLE-ONLY",
+					"offer": {
+						"attrs": [ 139062, 0, -1, -1, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED", "OPS_ASKED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 139062, 0, -1, 16440000, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 16
+					},
+					"last-buyer-action": "UACT_ASK",
+					"last-seller-action": "AACT_REQUEST",
+					"children": [
+						{
+							"ID": "UserOffers-PlayerSwap-AI-Counters-Requests-AdditionalCash-User-Accepts",
+							"offer": {
+								"attrs": [ 139062, 0, -1, -1, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED", "OPS_ASKED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 139062, 0, -1, 16440000, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+								"flags": 16
+							},
+							"last-buyer-action": "UACT_ACCEPT",
+							"last-seller-action": "AACT_REQUEST",
+							"children": null
+						}
+					]
+				},
+				{
+					"ID": "UserOffers-PlayerSwap-AI-Counters-Requests-AdditionalCash-User-Rejects",
+					"offer": {
+						"attrs": [ 139062, 0, -1, -1, -1, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED", "OPS_ASKED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 139062, 0, -1, 16440000, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED", "RPS_ACCEPTED" ],
+						"flags": 16
+					},
+					"last-buyer-action": "UACT_REJECT",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				}
+			]
+		}
+	],
+	"test_runs": [
+		{
+			"test_run_name":"Main test run"
+		}
+	]
+}

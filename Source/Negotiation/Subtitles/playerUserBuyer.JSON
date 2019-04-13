@@ -1,0 +1,1086 @@
+{
+	"ID": "root-to-be-ignored",
+	"offer": null,
+	"request": null,
+	"last-buyer-action": null,
+	"last-seller-action": null,
+	"children": [
+		{
+			"ID": "AI-Proposes-Role-User-Rejects",
+			"offer": {
+				"attrs": [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+				"npts": [ "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_REJECT",
+			"last-seller-action": "AACT_REQUEST",
+			"children": null
+		},
+		{
+			"ID": "playerUserBuyer",
+			"offer": {
+				"attrs": [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+				"npts": [ "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": null,
+			"last-seller-action": null,
+			"children": [
+				{
+					"ID": "AI-offers-user-agrees-ai-agrees",
+					"offer": {
+						"attrs": [ 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_AGREE",
+					"last-seller-action": "AACT_AGREE",
+					"children": null
+				},
+				{
+					"ID": "AI-proposes-Role-User-Counters-AI-counters",
+					"offer": {
+						"attrs": [ 5, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 1, -1, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				},
+				{	
+					"ID": "User-Proposes-Role-AI-Accepts-User-Proposes-Contract",
+					"offer": { 
+						"attrs": [ 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+						"flags": 0
+					},
+					"request": {
+						"attrs": [ 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_AGREE",
+					"children": [
+						{
+							"ID": "AI-proposes-contract-User-Rejects",
+							"offer": {
+								"attrs": [ 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "UACT_REJECT",
+							"last-seller-action": "AACT_REQUEST",
+							"children": null
+						},
+						{
+							"ID": "User-Proposes-Contract-AI-Accepts",
+							"offer": {
+								"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_AGREE",
+							"children": [
+								{
+									"ID": "User-Disregards-ReleaseClause",
+									"offer": {
+										"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+										"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+										"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+										"flags": 0
+									},
+									"last-buyer-action": "UACT_MAKE_OFFER",
+									"last-seller-action": "AACT_AGREE",
+									"children": null
+								}
+							]
+						},
+						{
+							"ID": "User-Proposes-Contract-AICounters",
+							"offer": {
+								"attrs": [ 1, 60, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+								"npts": [ "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_REQUEST",
+							"children": [
+								{
+									"ID": "User-Proposes-Contract-AICounters-User-Counters",
+									"offer": {
+										"attrs": [ 1, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1 ], 
+										"npts": [ "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ 1, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+										"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+										"flags": 0
+									},
+									"last-buyer-action": "UACT_MAKE_OFFER",
+									"last-seller-action": "AACT_REQUEST",
+									"children": null
+								},
+								{
+									"ID": "User-Proposes-Contract-AICounters-User-Accepts",
+									"offer": {
+										"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+										"npts": [ "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED", "OPS_IGNORED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+										"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED", "RPS_IGNORED" ],
+										"flags": 0
+									},
+									"last-buyer-action": "UACT_AGREE",
+									"last-seller-action": "AACT_REQUEST",
+									"children": [
+										{
+											"ID": "AI-Disregards-ReleaseClause-NO-BUYER-SUBTITLE",
+											"offer": {
+												"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_ASK",
+											"last-seller-action": "AACT_REQUEST",
+											"children": [
+												{
+													"ID": "AI-Disregards-ReleaseClause-User-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_AGREE",
+													"last-seller-action": "AACT_AGREE",
+													"children": null
+												},
+												{
+													"ID": "AI-Disregards-ReleaseClause-User-Counters",
+													"offer": {
+														"attrs": [ 1, 12, 4000000, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 4000000, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_AGREE",
+													"children": null
+												}
+											]
+										},
+										{
+											"ID": "AI-Disregards-ReleaseClause-User-Rejects",
+											"offer": {
+												"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_REJECT",
+											"last-seller-action": "AACT_REQUEST",
+											"children": null
+										},
+										{
+											"ID": "AI-Requests-ReleaseClause-NO-BUYER-SUBTITLE",
+											"offer": {
+												"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, 8610000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_ASK",
+											"last-seller-action": "AACT_REQUEST",
+											"children": [
+												{
+													"ID": "AI-Requests-ReleaseClause-User-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, 8610000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 8610000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_AGREE",
+													"last-seller-action": "AACT_AGREE",
+													"children": null
+												},
+												{
+													"ID": "AI-Requests-ReleaseClause-User-Denies",
+													"offer": {
+														"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_AGREE",
+													"children": null
+												}
+											]
+										},
+										{
+											"ID": "AI-Requests-ReleaseClause-UserRejects",
+											"offer": {
+												"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, 8610000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_REJECT",
+											"last-seller-action": "AACT_REQUEST",
+											"children": null
+										},										
+										{
+											"ID": "UserOffers-ReleaseClause-AI-Counters-DecreasedRC",
+											"offer": {
+												"attrs": [ 1, 12, 100000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, 27700000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_MAKE_OFFER",
+											"last-seller-action": "AACT_REQUEST",
+											"children": [
+												{
+													"ID": "User-Offers-ReleaseClause-AI-Counters-User-RemovesRC",
+													"offer": {
+														"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, -1, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_AGREE",
+													"children": null
+												},
+												{
+													"ID": "User-Offers-ReleaseClause-AI-Counters-DecrRC-UserIncrRC",
+													"offer": {
+														"attrs": [ 1, 12, 34700000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 27700000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags":  0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "User-Offers-ReleaseClause-AI-Counters-IncrRC",
+													"offer": {
+														"attrs": [ 1, 12, 20000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 27700000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "User-Offers-ReleaseClause-AI-Counters-IncrRC-UserDecr",
+															"offer": {
+																"attrs": [ 1, 12, 25500000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 27700000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_IGNORED", "RPS_IGNORED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_REQUEST",
+															"children": null
+														}
+													]
+												}
+											]
+										},
+										{
+											"ID": "UserOffers-ReleaseClause-AI-Accepts",
+											"offer": {
+												"attrs": [ 1, 12, 5000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_IGNORED", "OPS_IGNORED" ],
+												"flags": 0
+											},
+											"request": {
+												"attrs": [ 1, 12, 5000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+												"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_IGNORED", "RPS_IGNORED" ],
+												"flags": 0
+											},
+											"last-buyer-action": "UACT_MAKE_OFFER",
+											"last-seller-action": "AACT_AGREE",
+											"children": [
+												{
+													"ID": "AIOffers-Wage-SignOn-UserAccepts",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED" ],
+														"flags": 0
+														},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 120000, 510000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 16
+													},
+													"last-buyer-action": "UACT_ACCEPT",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "AIOffers-Wage-SignOn-UserRejects",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED" ],
+														"flags": 0
+														},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 120000, 510000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 16
+													},
+													"last-buyer-action": "UACT_REJECT",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-SignOn-AI-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 150000, 350000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 150000, 350000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_ACCEPT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-SignOn-AI-Declines-SignOn",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 150000, 400000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 150000, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-SignOn-AI-Counters-Increased-SignOn",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 150000, 300000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 150000, 350000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 80
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-AI-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 150000, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" , "RPS_SETTLED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_ACCEPT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-AI-Rejects",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 2, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 2, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REJECT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-Wage-AI-Counters-Increase",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 120000, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "UserOffers-Wage-AI-Counters-Increase-UserAccepts",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 120000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+																"flags": 144
+															},
+															"last-buyer-action": "UACT_ACCEPT",
+															"last-seller-action": "AACT_REQUEST",
+															"children": null
+														},
+														{
+															"ID": "UserOffers-Wage-AI-Counters-Increase-UserRejects",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 120000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+																"flags": 144
+															},
+															"last-buyer-action": "UACT_REJECT",
+															"last-seller-action": "AACT_REQUEST",
+															"children": null
+														},
+														{
+															"ID": "UserOffers-Wage-AI-Counters-Increase-User-Counters-Decrease-AI-CountersStick",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 140000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+																"flags": 145
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_REQUEST",
+															"children": [
+																{
+																	"ID": "UserOffers-Wage-AI-Counters-User-Counters-AI-Stalls",
+																	"offer": {
+																		"attrs": [ 1, 12, 5000000, 140000, 0, -1, -1, -1, -1, -1, -1 ],
+																		"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																		"flags": 0
+																	},
+																	"request": {
+																		"attrs": [ 1, 12, 5000000, 150000, 0, -1, -1, -1, -1, -1, -1 ],
+																		"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+																		"flags": 145
+																	},
+																	"last-buyer-action": "UACT_MAKE_OFFER",
+																	"last-seller-action": "AACT_STALL",
+																	"children": null
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "UserOffers-Wage-AI-Counters-AskSignOn",
+													"offer": {
+														"attrs": [ 1, 12, 5000000, 120000, 0, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, 5000000, 120000, 510000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "UserOffers-Wage-AI-Counters-AskSignOn-User-Removes-SignOn",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 120000, 0, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 120000, 510000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_ACCEPTED" ],
+																"flags": 145
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_REQUEST",
+															"children": null
+														},
+														{
+															"ID": "UserOffers-Wage-AI-Counters-AskSignOn-User-Increase-AI-Accepts",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 120000, 550000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 120000, 550000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserOffers-Wage-AI-Counters-AskSignOn-User-Decrease-AI-Accepts",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 120000, 400000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 120000, 400000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserOffers-Wage-AI-Counters-AskSignOn-UserDecrease-AI-Rejects",
+															"offer": {
+																"attrs": [ 1, 12, 5000000, 10000, 11000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, 5000000, 10000, 11000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_REJECT",
+															"children": null
+														}
+													]
+												},
+												{
+													"ID": "UserOffers-AppearanceBonus-AI-accepts",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, -1, -1, -1, -1, 5, 1000000 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, -1, -1, -1, -1, 5, 1000000 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_ACCEPT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-AppearanceBonus-AI-DeclinesBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 5, 1000000 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 130000, 700000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-AppearanceBonus-AI-IncreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 5, 700000 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 10, 8000000 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "UserCounters-DeclinesAppearanceBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-IncreaseAppearanceBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 15, 1000000 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 15, 1000000 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-DecreaseAppearanceBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 5, 500000 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 5, 500000 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														}
+													]
+												},
+												{
+													"ID": "UserOffers-AppearanceBonus-AI-DecreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 20, 1000000 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 10, 800000 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 96
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER", 
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-GoalsBonus-AI-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, -1, -1, 5, 1000000, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, -1, -1, 5, 1000000, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_ACCEPT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-GoalsBonus-AI-DeclinesBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 5, 1000000, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 130000, 700000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-GoalsBonus-AI-IncreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 5, 700000, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 10, 800000, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "UserCounters-DeclinesGoalsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-IncreaseGoalsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 15, 1000000, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 15, 1000000, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-DecreaseGoalsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 5, 500000, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 5, 500000, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														}
+													]
+												},
+												{
+													"ID": "UserOffers-GoalsBonus-AI-DecreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 20, 1000000, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 10, 800000, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 96
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER", 
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-CleansheetsBonus-AI-Accepts",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, 5, 1000000, -1, -1,  -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 2000000, 5, 1000000, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+														"flags": 0
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_ACCEPT",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-CleansheetsBonus-AI-DeclinesBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 5, 1000000, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 130000, 700000, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "UserOffers-CleansheetsBonus-AI-IncreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 5, 700000, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 10, 800000, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 144
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER",
+													"last-seller-action": "AACT_REQUEST",
+													"children": [
+														{
+															"ID": "UserCounters-DeclinesCleansheetsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-IncreaseCleansheetsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, 15, 1000000, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, 15, 1000000, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														},
+														{
+															"ID": "UserCounters-DecreaseCleansheetsBonus-AIAccepts",
+															"offer": {
+																"attrs": [ 1, 12, -1, 120000, 500000, 5, 500000, -1, -1, -1, -1 ],
+																"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+																"flags": 0
+															},
+															"request": {
+																"attrs": [ 1, 12, -1, 120000, 500000, 5, 500000, -1, -1, -1, -1 ],
+																"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED" ],
+																"flags": 0
+															},
+															"last-buyer-action": "UACT_MAKE_OFFER",
+															"last-seller-action": "AACT_ACCEPT",
+															"children": null
+														}
+													]
+												},
+												{
+													"ID": "UserOffers-CleansheetsBonus-AI-DecreaseBonus",
+													"offer": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 20, 1000000, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_OFFERED", "OPS_OFFERED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 10, 800000, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 96
+													},
+													"last-buyer-action": "UACT_MAKE_OFFER", 
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "AIOffers-AppearanceBonus-UserAccepts",
+													"offer": {
+														"attrs": [ 1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, -1, -1, 5, 1000000 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 16
+													},
+													"last-buyer-action": "UACT_ACCEPT",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "AIOffersGoalsBonus-UserAccepts",
+													"offer": {
+														"attrs": [  1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, -1, -1, 5, 1000000, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 16
+													},
+													"last-buyer-action": "UACT_ACCEPT",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												},
+												{
+													"ID": "AIOffersCleansheetsBonus-UserAccepts",
+													"offer": {
+														"attrs": [  1, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1 ],
+														"npts": [ "OPS_SETTLED", "OPS_SETTLED", "OPS_SETTLED", "OPS_ASKED", "OPS_ASKED" ],
+														"flags": 0
+													},
+													"request": {
+														"attrs": [ 1, 12, -1, 120000, 500000, 5, 1000000, -1, -1, -1, -1 ],
+														"npts": [ "RPS_SETTLED", "RPS_SETTLED", "RPS_SETTLED", "RPS_REJECTED", "RPS_REJECTED" ],
+														"flags": 16
+													},
+													"last-buyer-action": "UACT_ACCEPT",
+													"last-seller-action": "AACT_REQUEST",
+													"children": null
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"test_runs": [
+		{
+			"test_run_name":"Main test run"
+		}
+	]
+}

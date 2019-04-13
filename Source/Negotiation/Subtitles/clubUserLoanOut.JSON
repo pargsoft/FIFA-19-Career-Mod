@@ -1,0 +1,161 @@
+{
+	"ID": "clubUserLoanOut",
+	"offer": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_IGNORED" ],
+				"flags": 0
+	},
+	"request": null,
+	"last-buyer-action": null,
+	"last-seller-action": null,
+	"children": [
+		{
+			"ID": "User-counters-contract-length-proposed-AI-accepts",
+			"offer": {
+				"attrs": [ 6, 40 ],
+				"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 6, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "AACT_OFFER",
+			"last-seller-action": "UACT_REQUEST",
+			"children": null
+		},
+		{
+			"ID": "User-rejects-contract-length-proposed-by-AI",
+			"offer": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "RPS_REJECTED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "AACT_OFFER",
+			"last-seller-action": "UACT_REJECT",
+			"children": null
+		},
+		{
+			"ID": "user-accepts-contract-length-proposed-by-AI",
+			"offer": {
+				"attrs": [ 12, 60 ],
+				"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "RPS_SETTLED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "AACT_OFFER",
+			"last-seller-action": "UACT_AGREE",
+			"children": [
+				{
+					"ID": "user-counters-wage-split",
+					"offer": { "attrs": null, "npts": null, "flags": 0 },
+					"request": {
+						"attrs": [ 12, 44 ],
+						"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+						"flags": 0
+					},
+					"last-buyer-action": "AACT_ACCEPT",
+					"last-seller-action": "UACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "user-counters-wage-split-AI-counters",
+					"offer": {
+						"attrs": [ 12, 50 ],
+						"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+						"flags": 0
+						},
+					"request": {
+						"attrs": [ 12, 80 ],
+						"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+						"flags": 0
+						},
+					"last-buyer-action": "AACT_OFFER",
+					"last-seller-action": "UACT_REQUEST",
+					"children": [
+						{
+							"ID": "User-Counters-AI-counters-UserCounters-AIAccepts",
+							"offer": {
+								"attrs": [ 12, 50 ],
+								"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 12, 30 ],
+								"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_ACCEPT",
+							"last-seller-action": "UACT_REQUEST",
+							"children": null
+						},
+						{
+							"ID": "UserCounters-AICounters-UserCounters-AICounters",
+							"offer": {
+								"attrs": [ 12, 60 ],
+								"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+								"flags": 0
+							},
+							"request": {
+								"attrs": [ 12, 85 ],
+								"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+								"flags": 0
+							},
+							"last-buyer-action": "AACT_OFFER",
+							"last-seller-action": "UACT_REQUEST",
+							"children": [
+								{
+									"ID": "UserCountersThree-AIRejects",
+									"offer": {
+										"attrs": [ 12, 60 ],
+										"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ 12, 95 ],
+										"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+										"flags": 0
+									},
+									"last-buyer-action": "AACT_REJECT",
+									"last-seller-action": "UACT_REQUEST",
+									"children": null
+								},
+								{
+									"ID": "AICountersThree-User-Accepts",
+									"offer": {
+										"attrs": [ 12, 60 ],
+										"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+										"flags": 0
+									},
+									"request": {
+										"attrs": [ 12, 85 ],
+										"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+										"flags": 0
+									},
+									"last-buyer-action": "AACT_OFFER",
+									"last-seller-action": "UACT_ACCEPT",
+									"children": null
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"test_runs": [
+		{
+			"test_run_name":"Main test run"
+		}
+	]
+}

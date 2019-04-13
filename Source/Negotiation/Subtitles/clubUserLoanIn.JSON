@@ -1,0 +1,129 @@
+{
+	"ID": "clubUserLoanIn",
+	"offer": null,
+	"request": null,
+	"last-buyer-action": null,
+	"last-seller-action": null,
+	"children": [
+		{
+			"ID": "user-proposes-loan-length-ai-accepts",
+			"offer": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "OPS_OFFERED", "OPS_IGNORED" ],
+				"flags": 0
+			},
+			"request": {
+				"attrs": [ 12, -1 ],
+				"npts": [ "RPS_SETTLED", "RPS_IGNORED" ],
+				"flags": 0
+			},
+			"last-buyer-action": "UACT_MAKE_OFFER",
+			"last-seller-action": "AACT_AGREE",
+			"children": [
+				{
+					"ID": "user-proposes-wage-split-AI-accepts",
+					"offer": {
+						"attrs": [ 12, 70 ],
+						"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+						"flags": 0
+						},
+					"request": {
+						"attrs": [ 12, -1 ],
+						"npts": [ "RPS_SETTLED", "RPS_IGNORED" ],
+						"flags": 0
+						},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_ACCEPT",
+					"children": null
+				},
+				{
+					"ID": "AI-proposes-wage-split-User-accepts",
+					"offer": {
+						"attrs": [ 12, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_ASKED" ],
+						"flags": 0
+							},
+					"request": {
+						"attrs": [ 12, 60 ],
+						"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+						"flags": 0
+							},
+					"last-buyer-action": "UACT_ACCEPT",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "AI-proposes-wage-split-User-rejects",
+					"offer": {
+						"attrs": [ 12, -1 ],
+						"npts": [ "OPS_SETTLED", "OPS_ASKED" ],
+						"flags": 0
+							},
+					"request": {
+						"attrs": [ 12, 60 ],
+						"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+						"flags": 0
+						},
+					"last-buyer-action": "UACT_REJECT",
+					"last-seller-action": "AACT_REQUEST",
+					"children": null
+				},
+				{
+					"ID": "AI-proposes-wage-split-User-Counters-AI-Counters",
+					"offer": {
+						"attrs": [ 12, 15 ],
+						"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+						"flags": 0
+						},
+					"request": {
+						"attrs": [ 12, 50 ],
+						"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+						"flags": 0
+						},
+					"last-buyer-action": "UACT_MAKE_OFFER",
+					"last-seller-action": "AACT_REQUEST",
+					"children": [
+						{
+							"ID": "AI-proposes-wage-split-UCounter-AICounter-UCounter-AICounter",
+							"offer": {
+								"attrs": [ 12, 20 ],
+								"npts": [  "OPS_SETTLED", "OPS_OFFERED" ],
+								"flags": 0
+								},
+							"request": {
+								"attrs": [ 12, 40 ],
+								"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+								"flags": 0
+								},
+							"last-buyer-action": "UACT_MAKE_OFFER",
+							"last-seller-action": "AACT_REQUEST",
+							"children": [
+								{
+									"ID": "UserCountersThree-AIrejects",
+									"offer": {
+										"attrs": [ 12, 0 ],
+										"npts": [ "OPS_SETTLED", "OPS_OFFERED" ],
+										"flags": 0
+										},
+									"request": {
+										"attrs": [ 12, 40 ],
+										"npts": [ "RPS_SETTLED", "RPS_REJECTED" ],
+										"flags": 0
+										},
+									"last-buyer-action": "UACT_MAKE_OFFER",
+									"last-seller-action": "AACT_REJECT",
+									"children": null
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"test_runs": [
+		{
+			"test_run_name":"Main test run"
+		}
+	]
+}

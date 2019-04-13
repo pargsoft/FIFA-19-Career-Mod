@@ -82,13 +82,7 @@ __TEAM SELECTION__
 - place in dlc -> dlc_FootballCompEng -> dlc -> FootballCompEng -> data 
 - place in data -> teammanagement
 
-- [ ] AI more likely to pick better players
-- This is acheived by lowering the ratio of "fitness"
-- Can be tested by checking the "preview" news of the game. It now select the team I would normally pick & the opposition's team included the top scorer. 
-- Matches are now much harder due to opposition selecting best (and in-form) 11
-
-
-
+- [ ] AI more likely to pick better players over fitness or match importance
 
 ---------------------------
 moralesettings.ini
@@ -106,50 +100,23 @@ player_growth.ini
 ---------------------------
  
 __Growth__
-- [ ] Stopped "overgrowth" of players reaching abilities way beyond their potential (tested and works)
+- [ ] Stop "overgrowth" of players reaching abilities way beyond their potential
 - [ ] Stop old players declining by so much
 
 ---------------------------
 playervalues.ini
 ---------------------------
  
-- A complete re-design of the modifiers. Players like Neymar/Lukaku/Messi are over £100m now and almost impossible to buy.
+- [ ] A complete re-design of the modifiers. Making players like Neymar/Lukaku/Messi almost impossible to buy.
 
 ---------------------------
 playerwages.ini
 ---------------------------
  
 __A complete re-design of the modifiers__
-- [x] Players ask for more in the higher leagues
-- [x] Players ask for less in the lower leagues (matches Football Manager values in League 2)
+- [ ] Players ask for more in the higher leagues
+- [ ] Players ask for less in the lower leagues (matches Football Manager values in League 2)
 
-
----------------------------
-training_progress.ini
----------------------------
-
-__Training__
-
-- Added all attributes to the attribute list
-
----------------------------
-training_drill_attributes_list.ini
----------------------------
-
-__TRAINING__
-
-- Added Sprint Speed to Dribbling (In testing)
-
-**How do I add an attribute to a training drill?**
-
-- Open training_drill_attributes_list.ini
-- Find the drill you would like to add to or change
-
-**If your adding an attribute** 
-- increase the NUMBER_OF_ATTRIBUTES by 1
-- add the ATTRIBUTE_ to bottom of the current list with the same number given above
-- set the = Number to what you need
-- the attributes list can be found in "training_progress"
 
 ---------------------------
 tcm_finance_settings.ini
@@ -167,8 +134,6 @@ __FINANCE__
 --------------------------------------
 Transfers
 --------------------------------------
-- [ ] Improved AI searching for players that they need
-- [ ] Improved AI selling/loaning reserve/youth players
-- [ ] Increased the amount of teams that search per day (makes the game a little slower between days)
+- [ ] 
 
 
