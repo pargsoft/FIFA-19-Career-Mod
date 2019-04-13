@@ -13,6 +13,17 @@ function Trigger_PostLoadEvent()
 end
 
 function Trigger_NewSeasonStarted( seasonNumber )
+
+
+	require "logging.file"
+
+	local logger = logging.file("c:\\v2k4test%s.log", "%Y-%m-%d")
+
+	logger:info("logging.file test")
+	logger:debug("debugging...")
+	logger:error("error!")
+
+
 	local storyId = "NEWPLAYER"
 	local storyActive = Engine.IsStoryIDActive( storyId )
 	if( storyActive == true ) then

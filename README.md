@@ -40,7 +40,7 @@ How to install and run in Frosty Mod Manager:
 board.ini
 ---------------------------
 
-- [ ] Removed Sacking
+- [x] Removed Sacking
 
 ---------------------------
 cmsettings.ini
@@ -48,7 +48,7 @@ cmsettings.ini
 
 __FITNESS__
 
-- [ ] Lowered fitness recovery
+- [x] Lowered fitness recovery (Early Version)
 
 __MODIFIERS__
 
@@ -125,10 +125,10 @@ tcm_finance_settings.ini
 __FINANCE__
 - [ ] Increased Shirt Prices for League 1 & 2 to be more realistic
 - [ ] Increased Shirt Prices for Popular players (i.e. Neymar / Messi) so that signing good players earns money back
-- [ ] Increased Ground Maintanance for ALL clubs
+- [x] Increased Ground Maintanance for ALL clubs
 - [ ] Increased "Ticket" Income to include TV Revenue
-- [ ] Improve other leagues Ticket Income
-- [ ] Improve other leagues Shirt Prices
+- [x] Improve other leagues Ticket Income
+- [x] Improve other leagues Shirt Prices
 - [ ] Reduce money available to clubs in lower league (remove >£1m purchases from L1 & L2)
 
 --------------------------------------
