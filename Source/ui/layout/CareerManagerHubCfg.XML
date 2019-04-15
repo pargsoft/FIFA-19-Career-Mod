@@ -11,13 +11,13 @@
   </hub_settings>
   <components>
 	<component PATH="game/fluxHelpers/CareerHubLibrary.swf" X="0" Y="0" />
-    <component PATH="game/components/CareerComponents/CareerHubWidget.swf" X="110" Y="70" />
-    <component PATH="game/components/CareerComponents/EmailNotification.swf" X="110" Y="70" />
+    <component PATH="game/components/CareerComponents/CareerHubWidget.swf" X="109" Y="73" />
+    <component PATH="game/components/CareerComponents/EmailNotification.swf" X="109" Y="73" />
   </components>
   <buttons>
     <button ID="BACK" HINT="Back" ACTION="ACTION_NAV" DESTINATION="back" />
     <button ID="OPTION_LEFT" HINT="CM_Settings_Save" ACTION="ACTION_BUTTON_X" DESTINATION="SAVE" />
-    <!--<button ID="OPTION_TOP" HINT="CM_Hub_Callout_Inbox" ACTION="ACTION_BUTTON_Y" DESTINATION="NOTIFICATION_EMAIL_SELECTED" />-->
+    <button ID="OPTION_TOP" HINT="CM_Hub_Callout_Inbox" ACTION="ACTION_BUTTON_Y" DESTINATION="NOTIFICATION_EMAIL_SELECTED" />
   </buttons>
   <panel_set>
     <panel NAME="PAM_HUB_CENTRAL_PANEL" LABEL="txt_cmhub_central" IS_TAB="TRUE" />
@@ -30,7 +30,7 @@
   </panel_set>
   <panel NAME="PAM_HUB_CENTRAL_PANEL">
     <tile NAME="PAM_ADVANCE_CALENDAR" TYPE="TILE_ADVANCE" DATAPROVIDERID="CM_CALENDAR_DP" TILE_STATE="DISABLED">
-      <properties WIDTH="846" HEIGHT="204" X="109" Y="278" ENABLE_CYCLING="TRUE" />
+      <properties WIDTH="846" HEIGHT="204" X="109" Y="278" />
     </tile>
     <tile NAME="PAM_TABLES_NESTED" TYPE="TILE_NESTED">
       <properties WIDTH="418" HEIGHT="418" X="537" Y="492" ENABLE_CYCLING="TRUE"/>
@@ -347,9 +347,6 @@
       </subtile>
 	  <!-- squad hub tile is hidden from viewmodel if the main competition is not scheduled, since it is replacing tables tile (i.e. moving from USA in EU at the start of the 1st season), if you change this to a different feature also remove the code that hides it -->
       <subtile SUBTILE_TYPE="TILE" NAME="PAM_NEW_FEATURES_SUBTILE_1" DESTINATION="EnterSquadHub" BG_ICON="SquadHub_Small" DATAPROVIDERID="CM_HUB_SQUAD_HUB_DP" >
-        <data ID="TITLE" TYPE="title" PARAM="cm_crumbs_squad_hub" FORMAT="HS" />
-      </subtile>
-	  <subtile SUBTILE_TYPE="TILE" NAME="PAM_NEW_FEATURES_SUBTILE_1" DESTINATION="EnterSquadHub" BG_ICON="SquadHub_Small" DATAPROVIDERID="CM_HUB_SQUAD_HUB_DP" >
         <data ID="TITLE" TYPE="title" PARAM="cm_crumbs_squad_hub" FORMAT="HS" />
       </subtile>
     </tile>
@@ -1120,10 +1117,5 @@
         <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_old_fixtures" FORMAT="HS" />
       </subtile>
     </tile>
-  </panel>
-  <panel NAME="PAM_HUB_DEBUG_PANEL_V2K4">
-    <tile NAME="PAM_ADVANCE_CALENDAR" TYPE="TILE_ADVANCE" DATAPROVIDERID="CM_CALENDAR_DP">
-      <properties WIDTH="846" HEIGHT="204" X="109" Y="278" ENABLE_CYCLING="TRUE" />
-    </tile>    
   </panel>
 </root>
