@@ -2,12 +2,12 @@ Num buckets,5,,,,,,,,,,,,,,,,,,,,,,,
 Num intervals,4,,,,,,,,,,,,,,,,,,,,,,,
 ,Inside transfer window,,,,,,Outside transfer window,,,,,,,,,,,,,,,,,
 ,Teams,Chance (%),Decay (%),Rate,Days,MaxSquadSize,Teams,Chance (%),Decay (%),Rate,Days,MaxSquadSize,Teams,Chance (%),Decay (%),Rate,Days,MaxSquadSize,Teams,Chance (%),Decay (%),Rate,Days,MaxSquadSize
-Tier 1,10,80,0,DAILY,0,55,0,0,0,MONTHLY,30,40,2,20,0,BI_WEEKLY,60,40,2,25,0,WEEKLY,360,40
-Tier 2,4,11,0,DAILY,0,55,0,0,0,MONTHLY,30,40,1,10,0,BI_WEEKLY,60,40,2,10,0,WEEKLY,360,40
-Tier 3,4,10,0,DAILY,0,55,0,0,0,MONTHLY,30,40,1,5,0,BI_WEEKLY,60,40,1,5,0,WEEKLY,360,40
-Tier 4,1,10,0,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,1,5,0,WEEKLY,360,40
-Tier 5,1,10,0,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
-User Upgrade,1,1,0,DAILY,0,55,0,0,0,MONTHLY,30,40,1,10,0,BI_WEEKLY,60,40,2,10,0,WEEKLY,360,40
+Tier 1,7,30,1,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
+Tier 2,10,30,1,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
+Tier 3,7,10,1,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
+Tier 4,5,5,1,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
+Tier 5,30,25,1,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
+User Upgrade,5,100,0,DAILY,0,55,0,0,0,MONTHLY,30,40,0,0,0,BI_WEEKLY,60,40,0,0,0,WEEKLY,360,40
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,League ids,,,,,,,,,,,,,,,,,,,,,,,
 Tier 1,13,,,,,,,,,,,,,,,,,,,,,,,
