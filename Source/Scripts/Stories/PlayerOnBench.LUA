@@ -42,6 +42,11 @@ function ExamineFor_POB( numDays, gametype, fixture )
 end --function 
 
 function StartStory_POB( teamId, playerId )
+	local file = io.open("PLAYERONBENCH.txt", "w")
+	file:write("PLAYERONBENCH")
+	file:flush()
+	file:close()
+
 	local success = false
 	local category = "ONBENCH"
 	local storyId = "PLAYERONBENCH"
@@ -56,6 +61,11 @@ function StartStory_POB( teamId, playerId )
 end --if( isInjured == false and isPlayerSuspended == false ) then
 
 function PlayerOnBenchPostMatch( matchResult, gametype, playType )
+	local file = io.open("PLAYERONBENCH.txt", "w")
+	file:write("PLAYERONBENCH")
+	file:flush()
+	file:close()
+
 	local category = "ONBENCH"
 	local storyId = "PLAYERONBENCH"
 	local numStories = Engine.GetNumStoriesWithId( storyId )

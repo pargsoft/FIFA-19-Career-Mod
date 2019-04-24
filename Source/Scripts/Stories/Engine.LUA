@@ -1,11 +1,3 @@
-require "logging.file"
-
-local logger = logging.file("c:\\v2k4test%s.log", "%Y-%m-%d")
-
-logger:info("logging.file test")
-logger:debug("debugging...")
-logger:error("error!")
-
 Engine = {
 	AddDaysToDate = AddDaysToDate,
 	--AddDaysToCurrentDate = AddDaysToCurrentDate,

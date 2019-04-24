@@ -1,4 +1,10 @@
 function ExamineFor_TalkToPress_CPU( numDays, gametype, fixture )
+
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::ExamineFor_TalkToPress_CPU")
+	file:flush()
+	file:close()
+
 	if( string.find( gametype, "INTERNATIONAL" ) == nil ) then
 		if( numDays == 0 ) then
 			local chanceToStart = RollPercentageDice( Tuning.PRESS.chanceToStartPerc ) -- 25%
@@ -130,6 +136,13 @@ function GetStats( teamId, playerId )
 end
 	
 function TalkToPress_Player( teamId, playerId, appearances, goals, yellows, reds, option, isCpu, cpuTeam )
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Player")
+	file:flush()
+	file:close()
+
+
+
 	local category = "PRESS"
 	local storyId = "T2PPLAYER_"
 	if( isCpu == true ) then
@@ -381,6 +394,12 @@ function TalkToPress_Player( teamId, playerId, appearances, goals, yellows, reds
 end
 
 function TalkToPress_Manager( teamId, managerName, option, isCpu, cpuTeam )
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Manager")
+	file:flush()
+	file:close()
+
+
 	local category = "PRESS"
 	local storyId = "T2PMANAGER_"
 	local userTeamId = Engine.GetUserTeam()
@@ -436,6 +455,12 @@ function TalkToPress_Manager( teamId, managerName, option, isCpu, cpuTeam )
 end
 
 function TalkToPress_Team( teamId, option, isCpu, cpuTeam )
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Team")
+	file:flush()
+	file:close()
+
+
 	local category = "PRESS"
 	local storyId = "T2PTEAM_"
 	
@@ -510,6 +535,12 @@ function TalkToPress_Team( teamId, option, isCpu, cpuTeam )
 end
 
 function TalkToPress_Team_League( currentStory, teamId, userTeamId, opponentTeamId, category, storyId, fixture, derbyRival, titleStr, bodyStr )
+
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Team_League")
+	file:flush()
+	file:close()
+
 	local storyVar = "LEAGUE"
 		-- Derby/Rival
 	if( derbyRival == true ) then
@@ -558,6 +589,12 @@ function TalkToPress_Team_League( currentStory, teamId, userTeamId, opponentTeam
 end
 
 function TalkToPress_Team_Cup( currentStory, teamId, userTeamId, opponentTeamId, category, storyId, fixture, derbyRival, titleStr, bodyStr )
+
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Team_Cup")
+	file:flush()
+	file:close()
+
 	local storyVar = "CUP"
 	-- Derby/Rival
 	if( derbyRival == true ) then
@@ -612,6 +649,12 @@ function TalkToPress_Team_Cup( currentStory, teamId, userTeamId, opponentTeamId,
 end
 
 function TalkToPress_DetermineTeamDifference( userTeamId, opponentTeamId )	
+
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_DetermineTeamDifference")
+	file:flush()
+	file:close()
+
 	local evenDiff = Tuning.PRESS.evenDiff
 	local better = Tuning.PRESS.better
 	local sigBetter = Tuning.PRESS.sigBetter
@@ -646,6 +689,13 @@ function TalkToPress_DetermineTeamDifference( userTeamId, opponentTeamId )
 end
 
 function TalkToPress_Match( option, fixture, isCpu, cpuTeam )
+
+	local file = io.open("C:\Users\paul_\TalkToPress.txt", "w")
+	file:write("TalkToPress::TalkToPress_Match")
+	file:flush()
+	file:close()
+
+
 	local category = "PRESS"
 	local storyId = "T2PMATCH_"
 	
