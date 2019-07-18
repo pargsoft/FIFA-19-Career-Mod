@@ -134,7 +134,7 @@
 			</progress>
 		</expected_progress>
 	</objective>
-	<objective type="cashing_in" score="125"> <!-- Make 1m profit by 1st Transfer Window <10m -->
+	<objective type="cashing_in" score="125"> <!-- Make 500k profit by 2nd Transfer Window <20m -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="struggle_is_real"/>
@@ -142,7 +142,7 @@
 		</similarities>
 		<conditions non_mandatory_max_fail="0">
 			<condition type="have_profit" mandatory="true" arguments="1">
-				<argument name="profit" value="1000000"/> <!-- profit target to have -->
+				<argument name="profit" value="500000"/> <!-- profit target to have -->
 			</condition>
 			<condition type="deadline" mandatory="true" used_for_progress="false" arguments="4">
 				<argument name="type" value="1"/> <!-- deadline type 0=Fixed, 1=End of 1st transfer window, 2=End of 2nd transfer window, 3=End of season -->
@@ -164,10 +164,10 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="10000000"/>	<!-- club worth -->
+				<argument name="worth" value="20000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="transfer_win_available" arguments="1">
-				<argument name="window" value="0"/>	<!-- transfer window 0=1st transfer window, 2=second transfer window -->
+				<argument name="window" value="1"/>	<!-- transfer window 0=1st transfer window, 2=second transfer window -->
 			</precondition>
 			<precondition type="profit" arguments="2">
 				<argument name="op" value="0"/>	<!-- 0=greater or equal, 1=less-->
@@ -188,7 +188,7 @@
 			</progress>
 		</expected_progress>
 	</objective>	
-	<objective type="cashing_in" score="125"> <!-- Make 3m profit by 1st Transfer Window >10m <30m -->
+	<objective type="cashing_in" score="125"> <!-- Make 1.5m profit by 1st Transfer Window >20m <70m -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="struggle_is_real"/>
@@ -196,7 +196,7 @@
 		</similarities>		
 		<conditions non_mandatory_max_fail="0">
 			<condition type="have_profit" mandatory="true" arguments="1">
-				<argument name="profit" value="3000000"/> <!-- profit target to have -->
+				<argument name="profit" value="1500000"/> <!-- profit target to have -->
 			</condition>
 			<condition type="deadline" mandatory="true" used_for_progress="false" arguments="4">
 				<argument name="type" value="1"/> <!-- deadline type 0=Fixed, 1=End of 1st transfer window, 2=End of 2nd transfer window, 3=End of season -->
@@ -218,11 +218,11 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="10000000"/>	<!-- club worth -->
+				<argument name="worth" value="20000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="30000000"/>	<!-- club worth -->
+				<argument name="worth" value="70000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="transfer_win_available" arguments="1">
 				<argument name="window" value="0"/>	<!-- transfer window 0=1st transfer window, 2=second transfer window -->
@@ -246,7 +246,7 @@
 			</progress>
 		</expected_progress>
 	</objective>		
-	<objective type="cashing_in" score="125"> <!-- Make 5m profit by 1st Transfer Window >30m <50m -->
+	<objective type="cashing_in" score="125"> <!-- Make 5m profit by 1st Transfer Window >70m <90m -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="struggle_is_real"/>
@@ -276,11 +276,11 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="30000000"/>	<!-- club worth -->
+				<argument name="worth" value="70000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="5000000"/>	<!-- club worth -->
+				<argument name="worth" value="9000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="transfer_win_available" arguments="1">
 				<argument name="window" value="0"/>	<!-- transfer window 0=1st transfer window, 2=second transfer window -->
@@ -304,7 +304,7 @@
 			</progress>
 		</expected_progress>
 	</objective>
-	<objective type="cashing_in" score="125"> <!-- Make 10m profit by 1st Transfer Window >50m <300m -->
+	<objective type="cashing_in" score="125"> <!-- Make 10m profit by 1st Transfer Window >100m <300m -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="struggle_is_real"/>
@@ -334,7 +334,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="30000000"/>	<!-- club worth -->
+				<argument name="worth" value="10000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
@@ -594,14 +594,14 @@
 			</progress>
 		</expected_progress>
 	</objective>
-	<objective type="tighten_the_belt" score="125"> <!-- finish with 3m, <100m worth -->
+	<objective type="tighten_the_belt" score="125"> <!-- finish with 750k, <50m worth -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="cashing_in"/>
 		</similarities>
 		<conditions non_mandatory_max_fail="0">
 			<condition type="transfer_budget" mandatory="true" arguments="1">
-				<argument name="amount" value="3000000"/> <!-- amount of the transfer budget to have -->
+				<argument name="amount" value="750000"/> <!-- amount of the transfer budget to have -->
 			</condition>
 			<condition type="deadline" mandatory="true" used_for_progress="false" arguments="4">
 				<argument name="type" value="3"/> <!-- deadline type 0=Fixed, 1=End of 1st transfer window, 2=End of 2nd transfer window, 3=End of season -->
@@ -618,7 +618,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="100000000"/>	<!-- club worth -->
+				<argument name="worth" value="50000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="promotion_relegation" arguments="1">
 				<argument name="op" value="4"/> <!-- 0 = promoted, 1 = relegated, 2 = not promoted (relegated or same), 3 = not relegated (promoted or same), 4 = same league, 5 = not same league (promoted or relegated)-->
@@ -656,7 +656,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="3000000"/>	<!-- club worth -->
+				<argument name="worth" value="10000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="profit" arguments="2">
 				<argument name="op" value="0"/>	<!-- 0=greater or equal, 1=less-->
@@ -699,7 +699,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="3000000"/>	<!-- club worth -->
+				<argument name="worth" value="10000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
@@ -746,7 +746,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="10000000"/>	<!-- club worth -->
+				<argument name="worth" value="20000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
@@ -793,7 +793,7 @@
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="0"/>	<!-- operator 0=greater, 1=less -->
-				<argument name="worth" value="50000000"/>	<!-- club worth -->
+				<argument name="worth" value="75000000"/>	<!-- club worth -->
 			</precondition>
 			<precondition type="club_worth" arguments="2">
 				<argument name="op" value="1"/>	<!-- operator 0=greater, 1=less -->
@@ -952,14 +952,14 @@
 			</progress>
 		</expected_progress>
 	</objective>	
-	<objective type="keep_wages_in_check" score="95"> <!-- Wages under 100k, 20% -->
+	<objective type="keep_wages_in_check" score="95"> <!-- Wages under 100k, 15% -->
 		<duration min="1" max="1"/>
 		<similarities>
 			<similarity objective="wage_structure"/>
 		</similarities>
 		<conditions non_mandatory_max_fail="0">
 			<condition type="keep_wages_from_growing" mandatory="true" arguments="1">
-				<argument name="max_growth" value="20"/> <!-- maximum percent of the initial salary to grow -->
+				<argument name="max_growth" value="15"/> <!-- maximum percent of the initial salary to grow -->
 			</condition>
 			<condition type="deadline" mandatory="true" used_for_progress="false" arguments="4">
 				<argument name="type" value="3"/> <!-- deadline type 0=Fixed, 1=End of 1st transfer window, 2=End of 2nd transfer window, 3=End of season -->

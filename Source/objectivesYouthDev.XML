@@ -646,7 +646,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="sign_youth_and_play" mandatory="true" arguments="2">
 				<argument name="num_players" value="1"/> <!-- num players to sign and play -->
-				<argument name="games" value="10"/>	<!-- number of games to play in -->
+				<argument name="games" value="5"/>	<!-- number of games to play in -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -681,7 +681,7 @@
 			<precondition type="players_on_area" arguments="3">
 				<argument name="op" value="1"/>	<!-- operation 0=greater, 1=less, 2=equal -->
 				<argument name="area" value="1"/>	<!-- play area 0=GK, 1=DEF, 2=MID, 3=FW -->
-				<argument name="value" value="10"/>		<!-- number of players in that area to compare to -->
+				<argument name="value" value="5"/>		<!-- number of players in that area to compare to -->
 			</precondition>
 		</preconditions>
 		<expected_progress>
@@ -825,9 +825,9 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="2"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="10"/>	<!-- matches to play in the starting 11 or as sub -->
-				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="max_minute_for_subs" value="89"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -851,7 +851,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="1"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -937,7 +937,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="sign_youth_and_play" mandatory="true" arguments="2">
 				<argument name="num_players" value="1"/> <!-- num players to sign and play -->
-				<argument name="games" value="10"/>	<!-- number of games to play in -->
+				<argument name="games" value="5"/>	<!-- number of games to play in -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1091,7 +1091,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="1"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -1116,7 +1116,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="2"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -1141,8 +1141,8 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="1"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="10"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
@@ -1167,7 +1167,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="2"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1446,7 +1446,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="sign_youth_and_play" mandatory="true" arguments="2">
 				<argument name="num_players" value="2"/> <!-- num players to sign and play -->
-				<argument name="games" value="10"/>	<!-- number of games to play in -->
+				<argument name="games" value="5"/>	<!-- number of games to play in -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1562,7 +1562,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="2"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1590,7 +1590,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="1"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="85"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1617,7 +1617,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="1"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or play as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -1642,7 +1642,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="5">
 				<argument name="num_players" value="2"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or play as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -1667,8 +1667,8 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="5">
 				<argument name="num_players" value="2"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="10"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
@@ -1692,7 +1692,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="5">
 				<argument name="num_players" value="2"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -1872,7 +1872,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="3"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1900,7 +1900,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="3"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -1932,8 +1932,8 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="5"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="10"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
@@ -1957,8 +1957,8 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="4">
 				<argument name="num_players" value="3"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="20"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="5"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
@@ -1983,7 +1983,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="5"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -2011,7 +2011,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="6"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -2183,9 +2183,9 @@
 		<duration min="3" max="3"/>
 		<conditions non_mandatory_max_fail="0">
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
-				<argument name="num_players" value="10"/> <!-- num players to sign and grow -->
+				<argument name="num_players" value="7"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -2213,7 +2213,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="12"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="75"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -2321,7 +2321,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="3"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="85"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>
@@ -2509,8 +2509,8 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="5">
 				<argument name="num_players" value="5"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
-				<argument name="matches" value="30"/>	<!-- matches to play in the starting 11 or as sub -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="matches" value="20"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
 		</conditions>
@@ -2534,7 +2534,7 @@
 		<conditions non_mandatory_max_fail="0">
 			<condition type="grow_youth_and_play" mandatory="true" arguments="5">
 				<argument name="num_players" value="8"/> <!-- num players to grow and play -->
-				<argument name="overall" value="10"/>	<!-- overall points to grow (relative to the starting overall value) -->
+				<argument name="overall" value="3"/>	<!-- overall points to grow (relative to the starting overall value) -->
 				<argument name="matches" value="20"/>	<!-- matches to play in the starting 11 or as sub -->
 				<argument name="max_minute_for_subs" value="85"/>	<!-- maximum minute to be subbed in the game if played as sub -->
 			</condition>
@@ -2560,7 +2560,7 @@
 			<condition type="sign_youth_and_grow" mandatory="true" arguments="3">
 				<argument name="num_players" value="6"/> <!-- num players to sign and grow -->
 				<argument name="min_potential" value="85"/>	<!-- minimum potential of the player -->
-				<argument name="overall_growth" value="10"/>	<!-- overall points to grow with -->
+				<argument name="overall_growth" value="3"/>	<!-- overall points to grow with -->
 			</condition>
 		</conditions>
 		<preconditions>

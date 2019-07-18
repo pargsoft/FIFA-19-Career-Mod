@@ -15,23 +15,23 @@ logger:error("error!")
 function ExamineFor_UnhappyWithWage( teamId, playerId )
 	local category = "WAGE"
 	local numStories = Engine.GetNumStoriesByCategory( category )
-	-- if( numStories < Tuning.UWW.numStoriesLimit ) then
-	--	local userTeam = Engine.GetUserTeam()
-	--	if( teamId == userTeam ) then
-	--		local involved = Engine.IsPlayerInvolvedInStoryCategory( playerId, category )
-	--		if( involved == false ) then
-	--			local playerTier = Engine.GetPlayerTier( teamId, playerId )
-	--			if( playerTier < Tuning.UWW.playerTierLimit ) then
-	--				local isListed = Engine.IsPlayerOnTransferList( playerId )
-	--				local loanListed = Engine.IsPlayerOnLoanList( playerId )
-	--				local yearsRemaining = Engine.GetRemainingContractYears( teamId, playerId )
-	--				if( isListed == false and loanListed == false and yearsRemaining < Tuning.UWW.yearsRemainingLimit ) then
-	--					StartStory_UnhappyWithWage( teamId, playerId )
-	--				end
-	--			end
-	--		end
-	--	end
-	--end
+	if( numStories < Tuning.UWW.numStoriesLimit ) then
+		local userTeam = Engine.GetUserTeam()
+		if( teamId == userTeam ) then
+			local involved = Engine.IsPlayerInvolvedInStoryCategory( playerId, category )
+			if( involved == false ) then
+				local playerTier = Engine.GetPlayerTier( teamId, playerId )
+				if( playerTier < Tuning.UWW.playerTierLimit ) then
+					local isListed = Engine.IsPlayerOnTransferList( playerId )
+					local loanListed = Engine.IsPlayerOnLoanList( playerId )
+					local yearsRemaining = Engine.GetRemainingContractYears( teamId, playerId )
+					if( isListed == false and loanListed == false and yearsRemaining < Tuning.UWW.yearsRemainingLimit ) then
+						StartStory_UnhappyWithWage( teamId, playerId )
+					end
+				end
+			end
+		end
+	end
 end
 
 function StartStory_UnhappyWithWage( teamId, playerId )
@@ -43,16 +43,21 @@ function StartStory_UnhappyWithWage( teamId, playerId )
 	-- 	local delay = Engine.GetRandomNumber( Tuning.UWW.minDelay, Tuning.UWW.maxDelay )
 	-- 	Engine.AddDateEvent( "STARTDELAY", delay, storyId )
 	-- end
+	
+	storyId = storyId .. "_" .. numStories
+	if( Engine.MarkPlayerForStory( teamId, playerId, category, storyId, 21 ) == true ) then
+	 	Engine.AddDateEvent( "STARTDELAY", 1, storyId )
+	 end
 end
 
 function UnhappyWithWage_DynamicEvent( eventId, storyId )
-	-- if( eventId == "STARTDELAY" ) then
-	--	UnhappyWithWage_Stage1( storyId )
-	-- elseif( eventId == "REQUESTWAGE" ) then
-	-- 	UnhappyWithWage_Stage2( storyId )
-	-- elseif( eventId == "WAGEBOARD" ) then
-	-- 	UnhappyWithWage_Stage2_Board( storyId )
-	-- end
+	if( eventId == "STARTDELAY" ) then
+		UnhappyWithWage_Stage1( storyId )
+	elseif( eventId == "REQUESTWAGE" ) then
+	 	UnhappyWithWage_Stage2( storyId )
+	elseif( eventId == "WAGEBOARD" ) then
+	 	UnhappyWithWage_Stage2_Board( storyId )
+	end
 end
 
 function UnhappyWithWage_Stage1( storyId )

@@ -8,7 +8,7 @@ Excess Player Rank Multiplier,90,In case there aren't enough player rank multipl
 ,,,,,,
 Area Rank Multiplier,100,100,100,100,100,100
 ,,,,,,
-Player Rank Multiplier,225,200,175,150,90,85
+Player Rank Multiplier,275,250,200,175,100,85
 ,,,,,,
 Offer Points,0,10,15,,,
 ,These settings connect to CONTRACTLENGHTPLAYERAGE from TransfersPlayerContract.ini,,,,,
