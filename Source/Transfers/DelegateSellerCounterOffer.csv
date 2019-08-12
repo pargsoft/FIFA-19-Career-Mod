@@ -1,31 +1,31 @@
 SellerCounterOfferValue,,,,
 % of difference offer,100%,75%,50%,25%
-90,98,1,1,0
-60,97,2,1,0
-40,97,2,1,0
-20,97,2,1,0
+90,25,25,25,25
+60,25,25,25,25
+40,25,25,25,25
+20,25,25,25,25
 ,,,,
 SellerCounterOfferValueForLowOffer,,,,
 % of difference offer,same as above,,,
-low offer,99,1,0,0
+low offer,25,25,25,25
 ,,,,
 SellerCounterOfferTeamRankModifier,,,,
 rank,low % change,high % change,,
-1,-5,0,,
-2,-10,10,,
-3,-100,100,,
-4,-100,100,,
-5,-100,100,,
-6,-100,100,,
-7,-100,100,,
+1,0,0,,
+2,0,0,,
+3,0,0,,
+4,0,0,,
+5,0,0,,
+6,0,0,,
+7,0,0,,
 8,-100,100,,
 ,,,,
 SellerCounterOfferPlayerRankModifier,,,,
 rank,low % change,high % change,,
 1,0,0,,
-2,-10,5,,
-3,-100,100,,
-4,-100,100,,
-5,-100,100,,
-6,-100,100,,
+2,0,0,,
+3,0,0,,
+4,0,0,,
+5,0,0,,
+6,0,0,,
 7(excess),-100,100,,

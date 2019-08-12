@@ -1,9 +1,9 @@
 PlayerCounterOfferValue,,,,
 % of difference offer,100%,75%,50%,25%
-80,100,100,100,100
-60,100,100,100,100
-40,100,100,100,100
-20,100,100,100,100
+80,0,0,0,0
+60,0,0,0,0
+40,0,0,0,0
+20,0,0,0,0
 ,,,,
 PlayerCounterOfferValueForLowOffer,,,,
 % of difference offer,same chances as above,,,
