@@ -25,8 +25,7 @@
     <panel NAME="PAM_HUB_TRANSFERS_PANEL" LABEL="txt_cmhub_transfers" IS_TAB="TRUE" />
     <panel NAME="PAM_HUB_OFFICE_PANEL" LABEL="txt_cmhub_office" IS_TAB="TRUE" />
     <panel NAME="PAM_HUB_SEASON_PANEL" LABEL="txt_cmhub_season" IS_TAB="TRUE" />
-    <panel NAME="PAM_HUB_DEBUG_PANEL" LABEL="DEBUG" IS_TAB="TRUE"/>
-    <panel NAME="PAM_HUB_DEBUG_PANEL_V2K4" LABEL="V2K4" IS_TAB="TRUE"/>
+    <panel NAME="PAM_HUB_DEBUG_PANEL_V2K4" LABEL="V2K4" IS_TAB="FALSE"/>
   </panel_set>
   <panel NAME="PAM_HUB_CENTRAL_PANEL">
     <tile NAME="PAM_ADVANCE_CALENDAR" TYPE="TILE_ADVANCE" DATAPROVIDERID="CM_CALENDAR_DP" TILE_STATE="DISABLED">
@@ -340,14 +339,14 @@
 	  </subtile>
     </tile>
     <tile NAME="PAM_NEW_FEATURES_TILE_NESTED" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="418" X="109" Y="492"/>
+      <properties WIDTH="418" HEIGHT="209" X="109" Y="492"/>
+	  
+      <subtile SUBTILE_TYPE="TILE" NAME="PAM_NEW_FEATURES_SUBTILE_1" DESTINATION="EnterSquadHub" BG_ICON="SquadHub_Small" DATAPROVIDERID="CM_HUB_SQUAD_HUB_DP" >
+        <data ID="TITLE" TYPE="title" PARAM="cm_crumbs_squad_hub" FORMAT="HS" />
+      </subtile>
 	  <subtile NAME="PAM_NEW_FEATURES_SUBTILE_0" SUBTILE_TYPE="TILE" DESTINATION="EnterTransferHub" BACKGROUND="TransferHub_MedTall" >
         <data ID="TITLE" TYPE="title" PARAM="CM_TH_PAM" FORMAT="HS" />
         <data TYPE="text" PARAM="" FORMAT="I" WIDTH="360" HEIGHT="75" X="18" REL_TARGET="TITLE" REL_Y="10" />
-      </subtile>
-	  <!-- squad hub tile is hidden from viewmodel if the main competition is not scheduled, since it is replacing tables tile (i.e. moving from USA in EU at the start of the 1st season), if you change this to a different feature also remove the code that hides it -->
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_NEW_FEATURES_SUBTILE_1" DESTINATION="EnterSquadHub" BG_ICON="SquadHub_Small" DATAPROVIDERID="CM_HUB_SQUAD_HUB_DP" >
-        <data ID="TITLE" TYPE="title" PARAM="cm_crumbs_squad_hub" FORMAT="HS" />
       </subtile>
     </tile>
     <tile NAME="PAM_ADVANCE_PLAY" TYPE="TILE" DESTINATION="EnterMatchSubMenuFromPlay" BACKGROUND="PlaySmall" DATAPROVIDERID="CM_DAY_WITH_MATCH_DP">
@@ -1060,110 +1059,5 @@
       <data ID="TITLE" TYPE="title" PARAM="CM_HUB_Settings" FORMAT="HS" />
       <data TYPE="text" PARAM="txt_cmhub_desc_settings_customize" FORMAT="I" WIDTH="200" HEIGHT="75" X="18" REL_TARGET="TITLE" REL_Y="10" />
     </tile>
-  </panel>
-  <panel NAME="PAM_HUB_DEBUG_PANEL">
-    <tile NAME="PAM_OBJECTIVES" TYPE="TILE_NESTED" DATAPROVIDERID="CM_OBJECTIVES_DP" >
-      <properties WIDTH="418" HEIGHT="418" X="109" Y="492" ENABLE_CYCLING="TRUE"/>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OBJECTIVES_DOMESTIC" DESTINATION="EnterManagerModeObjectivesDomestic" BACKGROUND="BoardExpectTileBack_MedTall" >
-        <data ID="TITLE" TYPE="title" PARAM="CM_BP_Board_Priorities_upper" FORMAT="HS" />
-        <data ID="CATEGORY" TYPE="text" PARAM="CM_BP_DOMESTIC" FORMAT="SL" WIDTH="382" HEIGHT="75" X="18" Y="305" />
-        <data ID="LEVEL" TYPE="component" PATH="game/components/FluxComponents/career/ObjectivesPriorityLevel.swf" TRANSLATE="FALSE" WIDTH="32" HEIGHT="32" X="18" Y="350" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OBJECTIVES_REGIONAL" DESTINATION="EnterManagerModeObjectivesRegional" BACKGROUND="BoardExpectTileBack_MedTall">
-        <data ID="TITLE" TYPE="title" PARAM="CM_BP_Board_Priorities_upper" FORMAT="HS" />
-        <data ID="CATEGORY" TYPE="text" PARAM="CM_BP_Regional" FORMAT="SL" WIDTH="382" HEIGHT="75" X="18" Y="305" />
-        <data ID="LEVEL" TYPE="component" PATH="game/components/FluxComponents/career/ObjectivesPriorityLevel.swf" TRANSLATE="FALSE" WIDTH="32" HEIGHT="32" X="18" Y="350" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OBJECTIVES_POPULARITY" DESTINATION="EnterManagerModeObjectivesPopularity" BACKGROUND="BoardExpectTileBack_MedTall">
-        <data ID="TITLE" TYPE="title" PARAM="CM_BP_Board_Priorities_upper" FORMAT="HS" />
-        <data ID="CATEGORY" TYPE="text" PARAM="CM_BP_Popularity" FORMAT="SL" WIDTH="382" HEIGHT="75" X="18" Y="305" />
-        <data ID="LEVEL" TYPE="component" PATH="game/components/FluxComponents/career/ObjectivesPriorityLevel.swf" TRANSLATE="FALSE" WIDTH="32" HEIGHT="32" X="18" Y="350" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OBJECTIVES_PROFITABILITY" DESTINATION="EnterManagerModeObjectivesProfitability" BACKGROUND="BoardExpectTileBack_MedTall">
-        <data ID="TITLE" TYPE="title" PARAM="CM_BP_Board_Priorities_upper" FORMAT="HS" />
-        <data ID="CATEGORY" TYPE="text" PARAM="CM_BP_Profitability" FORMAT="SL" WIDTH="382" HEIGHT="75" X="18" Y="305" />
-        <data ID="LEVEL" TYPE="component" PATH="game/components/FluxComponents/career/ObjectivesPriorityLevel.swf" TRANSLATE="FALSE" WIDTH="32" HEIGHT="32" X="18" Y="350" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OBJECTIVES_YOUTH" DESTINATION="EnterManagerModeObjectivesYouth" BACKGROUND="BoardExpectTileBack_MedTall">
-        <data ID="TITLE" TYPE="title" PARAM="CM_BP_Board_Priorities_upper" FORMAT="HS" />
-        <data ID="CATEGORY" TYPE="text" PARAM="CM_BP_Youth_Development" FORMAT="SL" WIDTH="382" HEIGHT="75" X="18" Y="305" />
-        <data ID="LEVEL" TYPE="component" PATH="game/components/FluxComponents/career/ObjectivesPriorityLevel.swf" TRANSLATE="FALSE" WIDTH="32" HEIGHT="32" X="18" Y="350" />
-      </subtile>
-    </tile>
-    <tile NAME="PAM_BROWSE_JOBS_NESTED" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="204" X="1393" Y="706" />
-      <subtile NAME="PAM_BROWSE_JOBS_SUBTILE" BG_ICON="BrowseJobs_Small" SUBTILE_TYPE="TILE" DESTINATION="EnterBrowseJobs">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_browse_jobs" FORMAT="HS" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_BROWSE_JOBS_INTERNATIONAL" DESTINATION="ShowResignInternationalJobPopUp" BG_ICON="ResignNatlTeam_Small" PARAM="" DATAPROVIDERID="CM_HUB_BROWSE_JOBS_DP">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_resign_intl_team" FORMAT="HS" />
-        <data ID="DESC" TYPE="text" PARAM="txt_cmhub_desc_resign_intl_team" FORMAT="I" WIDTH="200" HEIGHT="75" X="18" REL_TARGET="TITLE" REL_Y="10" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_BROWSE_JOBS_INTERNATIONAL_OFFERS" DESTINATION="EnterInternationalOffers" BG_ICON="NatlTeamJobOffers_Small">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_intl_offers" FORMAT="HS" />
-        <data ID="DESCLOCKED" TYPE="text" PARAM="txt_cmhub_desc_intl_no_offers" FORMAT="I" SHOW_IN_STATE="DISABLED" WIDTH="382" HEIGHT="75" X="18" REL_TARGET="TITLE" REL_Y="10" />
-        <data ID="DESCUNLOCKED" TYPE="text" PARAM="txt_cmhub_desc_intl_offers" FORMAT="I" SHOW_IN_STATE="ENABLED" WIDTH="382" HEIGHT="75" X="18" REL_TARGET="TITLE" REL_Y="10" />
-      </subtile>
-    </tile>
-    <tile NAME="PAM_SQUAD_REPORT_NESTED" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="204" X="109" Y="278" />
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_SQUAD_REPORT_SUBTILE" DESTINATION="EnterSquadReport" DATAPROVIDERID="CM_HUB_SQUAD_REPORT_DP" BG_ICON="SquadReport_Small" >
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_squad_report" FORMAT="HS" />
-        <data ID="EDITLOCKED" TYPE="icon" PARAM="LOCKED" SHOW_IN_STATE="DISABLED" WIDTH="64" HEIGHT="64" X="18" Y="125" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_SQUAD_REPORT_RANKING" DESTINATION="EnterSquadRanking" BG_ICON="SquadRanks_Small" PARAM="" DATAPROVIDERID="CM_HUB_SQUAD_RANKING_DP">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_squad_ranking" FORMAT="HS" />
-        <data ID="EDITLOCKED" TYPE="icon" PARAM="LOCKED" SHOW_IN_STATE="DISABLED" WIDTH="64" HEIGHT="64" X="18" Y="125" />
-      </subtile>
-    </tile>
-    <tile NAME="PAM_KITS_NESTED" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="204" X="537" Y="278" />
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_KITS_NUMBER" DESTINATION="EnterEditKitNumber" BG_ICON="KitNumbers_Small">
-        <data ID="TITLE" TYPE="title" PARAM="CM_Squad_Edit_Kit_Numbers_PAM" FORMAT="HS" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_KITS_INJURY" DESTINATION="EnterInjuryList" BG_ICON="InjuryList_Small" PARAM="">
-        <data ID="TITLE" TYPE="title" PARAM="CM_HUB_Injury_List" FORMAT="HS" />
-      </subtile>
-    </tile>
-    <tile NAME="CM_OVERLAY_TEST" TYPE="TILE" DESTINATION="overlayTest" BG_ICON="Contract_Small">
-      <properties WIDTH="418" HEIGHT="204" X="965" Y="492" />
-      <data ID="TITLE" TYPE="title" PARAM="OVERLAY TEST" FORMAT="HS" />
-    </tile>
-    <tile NAME="SCENE_TEST_TILE" TYPE="TILE" DESTINATION="EnterSceneTest" BG_ICON="">
-      <properties WIDTH="418" HEIGHT="204" X="965" Y="278" />
-      <data ID="TITLE" TYPE="title" PARAM="TRANSFER NEGO SCENE TEST" TRANSLATE="FALSE" FORMAT="HS" />
-    </tile>
-    <tile NAME="PAM_TEST" TYPE="TILE">
-      <properties WIDTH="418" HEIGHT="418" X="537" Y="492" />
-      <data ID="TITLE" TYPE="title" PARAM="TIPS"/>
-      <data TYPE="component" PATH="game/components/TooltipBubble.swf" PARAM="Here you will see explanation text for the selected option on the chat wheel." FORMAT="SL|COLOR_FILL_HIGHLIGHT_CONTRAST|right" WIDTH="382" X="18" REL_TARGET="TITLE" REL_Y="10" TRACE="TRUE"/>
-    </tile>
-	<tile NAME="PAM_OLD_STANDINGS" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="204" X="965" Y="706" />
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_STANDINGS" DESTINATION="EnterStandingsOld">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_old_standings" FORMAT="HS" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_OTHER_COMPS" DESTINATION="EnterOtherCompsOld">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_old_other_comps" FORMAT="HS" />
-      </subtile>
-	  <subtile SUBTILE_TYPE="TILE" NAME="PAM_OLD_FIXTURES" DESTINATION="EnterFixtures">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_old_fixtures" FORMAT="HS" />
-      </subtile>
-    </tile>
-  </panel>
-<panel NAME="PAM_HUB_DEBUG_PANEL_V2K4">
-    
-    <tile NAME="PAM_SQUAD_REPORT_NESTED" TYPE="TILE_NESTED">
-      <properties WIDTH="418" HEIGHT="204" X="109" Y="278" />
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_SQUAD_REPORT_SUBTILE" DESTINATION="EnterSquadReport" DATAPROVIDERID="CM_HUB_SQUAD_REPORT_DP" BG_ICON="SquadReport_Small" >
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_squad_report" FORMAT="HS" />
-        <data ID="EDITLOCKED" TYPE="icon" PARAM="LOCKED" SHOW_IN_STATE="DISABLED" WIDTH="64" HEIGHT="64" X="18" Y="125" />
-      </subtile>
-      <subtile SUBTILE_TYPE="TILE" NAME="PAM_SQUAD_REPORT_RANKING" DESTINATION="EnterSquadRanking" BG_ICON="SquadRanks_Small" PARAM="" DATAPROVIDERID="CM_HUB_SQUAD_RANKING_DP">
-        <data ID="TITLE" TYPE="title" PARAM="txt_cmhub_title_squad_ranking" FORMAT="HS" />
-        <data ID="EDITLOCKED" TYPE="icon" PARAM="LOCKED" SHOW_IN_STATE="DISABLED" WIDTH="64" HEIGHT="64" X="18" Y="125" />
-      </subtile>
-    </tile>
-    
   </panel>
 </root>
