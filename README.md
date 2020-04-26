@@ -2,7 +2,30 @@
 
 This is a FIFA 19 mod for the Career Mode. 
 
-You can join the discussion here. https://discord.gg/rPekwGc
+# LICENSE -- IMPORTANT
+
+This repository comes with a strict license that allows the following:
+
+## Permissions
+- Commercial use
+- Distribution
+- Modification
+- Patent use
+- Private use
+
+## Conditions
+- You must Disclose source (would be best if you Fork this repository)
+- License and copyright notice
+- Same license
+- State changes
+
+## Limitations - I provide to warranty or liability of what happens to your game
+- Liability
+- Warranty
+
+
+# This contains the Frosty Editor fbProject and all loose source files used for the project
+
 
 ---------------------------
 
